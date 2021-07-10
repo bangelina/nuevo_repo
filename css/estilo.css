@@ -1,0 +1,598 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    font-family:  'Noto Sans KR', sans-serif;
+    
+    
+}
+.header {
+    
+    width: 100%;
+    height: 200px;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+
+}
+/*Index*/
+
+.padre {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 1000px 700px 300px;
+    grid-template-areas: "header header"
+                         "section1 section1"
+                         "section2 section2"
+                         "section3 section3"
+}
+.grupoh2index {
+    color:rgb(184, 132, 143);
+}
+
+
+
+.section1 {
+    width: 70%;
+    height: 1000px;
+    padding-left: 400px;
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.section2 {
+    
+    height: 700px;
+    grid-area: section2;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;   
+    align-items: center;
+    
+}
+.section3 {
+    
+    height: 300px;
+    grid-area: section3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.section4 {
+
+    grid-area: footer footer;
+    display: flex;
+}
+
+.direccion {
+    height: 20%;
+    padding-top: 30px;
+    
+}
+.telefono {
+    height: 20%;
+
+}
+.email {
+    height: 20%;
+}
+/*Fin index*/  
+/*Footer de todas las secciones*/  
+.footer1 {
+    
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    height: 150px;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas: "area1 area4"
+                         "area2 area5 "
+                         "area3 area6";
+
+}
+.footerSocialLinks {
+    height: 100%;
+    width: 100%;
+    grid-area: area1;
+    display: flex;
+   justify-content: center;
+    align-items: baseline;
+    
+}
+.footerSocialLinks img {
+    margin-top: 10px;
+    height: 20px;
+    grid-area: area1;
+    padding-left: 20px;    
+}
+.pfooter {
+    font-size: 15px;
+    padding-right: 20px;
+    color: blanchedalmond;
+}
+.mail {
+    height: 100%;
+    width: 100%;
+    grid-area: area2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.mail img {
+    height: 30px;    
+}
+.pmail {
+    font-size: 15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+    padding-left: 5px;
+    
+    
+}
+.telefono {
+    height: 100%;
+    width: 100%;
+    grid-area: area3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.telefono img {
+    height: 30px;
+}
+.telefonop {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    padding-left: 5px;
+    margin-top: 8px;
+  
+}
+.nosotros {
+    height: 100%;
+    width: 100%;
+    grid: area4;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;    
+}
+.nosotros1{ 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: black;
+    grid-area: area4;
+    margin-top: 30px;
+    margin-left: 60px;  
+
+}
+
+.nosotros2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    grid-area: area5;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*Fin Footer*/
+/*Aca aplique Gradiente*/
+.footer2 {
+    background-image:linear-gradient(  rgb(233, 197, 219), rgb(221, 65, 125));
+    height: 150px;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+/*Aplicado a todas las secciones*/
+nav {
+    width: 80%;
+    
+
+}
+.imagenLogo {
+    width: 180px;
+    height:180px;
+}
+.imagenLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Aplicado a todas las secciones*/
+/*Aplicado a index, decoracion,productos, preg frecuentes*/
+
+h3{
+    color:rgb(206, 127, 127);
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+h4{
+    color: black;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: rgb(23, 26, 27);
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  li {
+      list-style-type:none;
+      display: inline-block; 
+ }
+/*Aplicado a index, decoracion,productos, preg frecuentes*/
+
+/*Contacto*/
+.footer5 {
+    height: 200px;
+    background-color: #ff0844;
+}
+.bodycontacto {
+    height: 1300px;
+}
+
+.pcontac {
+    text-align:left;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 0px;
+    padding-left: 0px;   
+}
+
+fieldset {
+        font-family: 'Noto Sans KR', sans-serif;
+            
+}
+.contenedor2 {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Fin Contacto*/
+
+ /*Transformacion: scale*/
+  .liindex:hover {
+  transform: scale(2,2);
+  }
+
+ul {
+      display: flex;
+      justify-content: space-around;
+      align-items:center;
+      height: 100%;
+}
+
+.lipf {
+font-size: 16px;
+font-family:  'Noto Sans KR', sans-serif;
+}
+/*Inicio Tabla-Decoracion*/
+table{
+    border: solid black;
+    font-size: 18px;
+    
+}
+th{
+    color:black;
+    border: 2px solid black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+td{
+    color:black;
+    border: 2px solid black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+tr{
+    color:black;
+    border: 2px solid black;
+    font-size: 18px;
+}
+caption{
+    color:rgb(12, 6, 6);
+    margin-top: 30px;
+    text-align: left;
+
+}
+
+ol li{
+    color: black;
+    font-size: 20px;
+    display: flex;
+    padding-left: 12px;
+    
+}
+/*Fin tabla-Decoracion*/
+/*Preguntas Frecuentes*/
+.h3preguntasfrecuentes {
+    color:rgb(22, 20, 20);
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin:10px 10px 10px 10px;
+}
+.grupopfrecuentes {
+    text-align:left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    padding-left: 0px;
+    margin: 10px 10px 10px 10px;
+
+}
+.contenedor3 {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    width: 100%;
+    height: 40%;
+    align-items:stretch;
+   
+}
+.btn-outline-success {
+    color:black;
+    border-color: black;
+}
+.accordion-button:not(.collapsed) {
+
+color: solid rgb(224, 223, 223);
+}
+
+.mainpf {
+    height: 450px;
+}
+.divfooter {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.telefonopf {
+    height: 20%; 
+
+}
+
+/*Fin Preguntas Frecuentes*/
+
+
+/*Decoracion*/
+.contenedordecoracion {
+    height: 1800px;
+    
+}
+.padre2 {
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.almohadon1 {
+    
+    background-image: url(../img/almohadon1.jpg);
+    background-repeat: no-repeat;
+    height:300px;
+    width: 22%;
+    border: solid rgb(247, 190, 203);
+}
+.almohadon6 {
+    
+    background-image: url(../img/almohadon6.jpg);
+    height: 300px;
+    width: 22%;
+    border: solid rgb(247, 190, 203);
+}
+.almohadon2 {
+    
+    background-image: url(../img/almohadon2.jpg);
+    height: 300px;
+    width: 22%;
+    border: solid rgb(247, 190, 203);
+}
+.padre3 {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.vela1 {
+    background-image: url(../img/vela1.jpg);
+    width: 22%;
+    height: 300px;
+    background-repeat: no-repeat;
+    border: solid rgb(247, 190, 203)
+}
+.vela2 {
+    background-image: url(../img/vela2.jpg);
+    width: 22%;
+    height: 300px;
+    background-repeat: no-repeat;
+    border: solid rgb(247, 190, 203);
+}
+.vela3 {
+  background-image: url(../img/vela3.jpg);
+  width: 22%;
+  height: 300px;
+  background-repeat: no-repeat;
+  border: solid rgb(247, 190, 203);
+}
+
+.padre4 {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.neceser1 {
+    background-image: url(../img/neceser2.jpg);
+    width: 22%;
+    height: 300px;
+    border: solid rgb(247, 190, 203);
+    background-repeat: no-repeat;
+}
+.neceser2 {
+    background-image: url(../img/neceser5.jpg);
+    width: 22%;
+    height: 300px;
+    border: solid rgb(247, 190, 203);
+    background-repeat: no-repeat;
+}
+.neceser3 {
+    background-image: url(../img/neceser6.jpg);
+    width: 22%;
+    height: 300px;
+    border: solid rgb(247, 190, 203);
+    background-repeat: no-repeat;
+}
+/*Fin Decoracion*/
+
+/*Productos*/
+.contenedor {
+    height: 1100px;
+}
+.remeras {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+.remera1 {   
+    height: 370px;
+    width: 24%;
+    border: solid rgb(247, 190, 203);
+}
+.remera1 img {
+    height: 100%;
+    width: 100%;
+}
+.remera2 {
+
+ height: 370px;
+ width: 24%;
+ border: solid rgb(247, 190, 203);
+}
+.remera2 img {
+    width: 100%;
+    height: 100%;
+}
+.remera3 {
+
+ height: 370px;
+ width: 24%;
+ border: solid rgb(247, 190, 203);
+}
+.remera3 img {
+    width: 100%;
+    height: 100%;
+}
+.remera4 {
+    
+    height: 370px;
+    width: 24%;
+    border: solid rgb(247, 190, 203);   
+}
+.remera4 img {
+    width: 100%;
+    height: 100%;
+}
+.sweaters {
+    
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sweater1 {
+    
+    height: 370px;
+    width: 24%;
+    border: solid rgb(247, 190, 203);
+}
+.sweater1 img {
+    width: 100%;
+    height: 100%;
+}
+.sweater2 {
+    
+    height: 370px;
+    width: 24%;
+    border: solid rgb(247, 190, 203);
+}
+.sweater2 img {
+    width: 100%;
+    height: 100%;
+}
+.sweater3 {
+    
+    height: 370px;
+    width: 24%;
+    border: solid rgb(247, 190, 203);
+}
+.sweater3 img {
+    width: 100%;
+    height: 100%;
+}
+.sweater4 {
+    
+    height: 370px;
+    width: 24%;
+    border: solid rgb(247, 190, 203);
+}
+.sweater4 img {
+    width: 100%;
+    height: 100%;
+}
+/*Fin Productos*/
+
+/*Focus*/
+input:focus {
+background-color: rgb(223, 156, 156);
+width: 300px;
+height: 30px;
+}
+.text-center  {
+    background-color: rgb(233, 136, 152);
+}
+.d-block {
+    height: 500px;
+}
+#carouselExampleControls {
+    padding-left: 100px;
+}
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
